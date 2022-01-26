@@ -1,0 +1,19 @@
+{
+  "name": "shopit",
+  "version": "1.0.0",
+  "description": "Full ecommerce site made with MERN",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dami-laare/shopIT.git"
+  },
+  "author": "Temitayo Osunkiyesi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dami-laare/shopIT/issues"
+  },
+  "homepage": "https://github.com/dami-laare/shopIT#readme"
+}
