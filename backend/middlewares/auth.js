@@ -14,6 +14,7 @@ exports.isAuthenticated = catchAsyncErrors(async (req, res, next) => {
     const decoded = jsonwebtoken.verify(token, process.env.JWT_SECRET);
 
     req.user = await User.findById(decoded.id);
+
     next();
 });
 
