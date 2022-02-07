@@ -1,7 +1,7 @@
 {
   "name": "shopit",
   "version": "1.0.0",
-  "description": "Full ecommerce site made with MERN",
+  "description": "Full e-commerce site made with MERN",
   "main": "server.js",
   "scripts": {
     "start": "node backend/server",
