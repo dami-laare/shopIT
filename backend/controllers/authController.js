@@ -74,7 +74,7 @@ exports.forgotPassword = catchAsyncErrors(async (req, res, next) => {
     const user = await User.findOne({email: req.body.email});
 
     if(!user) {
-        return next(new ErrorHandler('Invalid email address', 404));
+        return next(new ErrorHandler('User does not exist', 404));
     };
 
     const resetToken = user.getResetPasswordToken();
@@ -141,7 +141,7 @@ exports.resetPassword = catchAsyncErrors(async (req, res, next) => {
     sendToken(user, 200, res);
 })
 
-// Show profile for currently logged in user /api/v1/myprofile 
+// Show profile for currently logged in user /api/v1/me
 exports.getUserProfile = catchAsyncErrors(async (req, res, next) => {
     const user = await User.findById(req.user._id);
 
